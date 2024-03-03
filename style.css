@@ -1,0 +1,125 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f29ae4;
+}
+body {
+  font-family: "Acme", sans-serif;
+}
+
+.hero {
+  background-color: #e0ea11;
+  color: #e58fe2;
+  padding: 50px 30px;
+  text-align: center;
+  position: relative;
+}
+
+.hero:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 10px;
+background:linear-gradient(to left, #e0ea11, #c64dfc);
+}
+.hero:after{
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height: 10px;
+background:linear-gradient(to right, #e0ea11, #c64dfc);
+}
+
+.hero h1 {
+  font-weight: normal;
+  font-style: 6rem;
+  margin: 0;
+}
+
+.hero h2{
+    font-weight: normal;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.filter-nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.filter-nav a{
+    text-decoration: none;
+    padding: 9px;
+    color: #e0ea11;
+    border: 1px solid #e58fe2;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.animals {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.animal-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: #c64dfc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.animal-card:hover img{
+    transform: translateY(-10px) scale(1.1);
+}
+.animal-card-text {
+    padding: 20px 25px;
+}
+
+.animal-card-text h3{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+.animal-card-text small{
+    color: #f29ae4;
+}
+
+.animal-card-text p {
+    margin: .8rem 0;
+    padding: 0;
+    line-height: 1.5;
+
+}
+
+.primary-btn {
+    background: linear-gradient(#e0ea11, #e58fe2);
+    padding: 10px;
+    color: #c64dfc ;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+.primary-btn:hover{
+background: linear-gradient(#f29ae4, #e0ea11);
+}
+.animal-card-photo {
+    order: 1;
+    grid-row: 1;
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+}
+
+.animal-card-photo img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
