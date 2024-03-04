@@ -20,10 +20,10 @@
     </div>
 
     <div class="filter-nav">
-      <a href="#">All animals</a>
-      <a href="#">Only dogs</a>
-      <a href="#">Only cats</a>
-      <a href="#">Only rabbits</a>
+      <a href="#" data-filter="all">All animals</a>
+      <a href="#" data-filter="dog"><span class="only-large-screen">Only</span> dogs</a>
+      <a href="#" data-filter="cat"><span class="only-large-screen">Only</span> cats</a>
+      <a href="#" data-filter="rabbit"><span class="only-large-screen">Only</span> rabbits</a>
     </div>
 
     <div class="animals">
@@ -31,12 +31,12 @@
     <template id="animal-card"><div class="animal-card">
       <div class="animal-card-text">
         <h3>Meowsalot</h3>
-        <small><span class="age">3 years old</span> - <span>cat</span></small>
+        <small><span class="age">3 years old</span> - <span class="species">cat</span></small>
         <p class="description">
           Meowsalot is a talkative friend that loves to play and is great with
           children. He is looking for a forever home today!
         </p>
-        <a href="#" class="primary-btn">Adopt</a>
+        <a href="#" class="primary-btn">Adopt <span class="name"></span></a>
       </div>
       <div class="animal-card-photo">
         <img src="https://learnwebcode.github.io/pet-adoption-data/photos/meowsalot.webp" alt="cat" />
